@@ -1,0 +1,6 @@
+package Framework1.Fwk1.pageObjects;
+
+public class LoginPage {
+
+	
+}

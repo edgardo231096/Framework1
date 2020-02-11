@@ -1,0 +1,12 @@
+package Framework1.Fwk1.pageObjects;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.How;
+
+public class HomePage {
+
+	public WebDriver driver; 
+	
+	@FindBy(how=How.XPATH; using="//button[text()='Login']")
+	public WebElement btnLogin;
+}

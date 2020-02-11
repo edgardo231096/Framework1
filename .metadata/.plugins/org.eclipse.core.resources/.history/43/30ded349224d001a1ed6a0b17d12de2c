@@ -1,0 +1,23 @@
+package Framework1.Fwk1.testScripts;
+
+import org.testng.annotations.*;
+
+public class loginTestScript {
+
+	public WebDriver driver; 
+	
+	@BeforeClass 
+	public void setUp(){
+		
+	}
+	
+	@Test
+	public void test() {
+		
+	}
+	
+	@AfterClass
+	public void tearDown() {
+		
+	}
+}

@@ -1,0 +1,27 @@
+package Framework1.Fwk1.Utils;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Tools {
+
+	public static WebElement waitforElementPresence(WebDriver driver, By locator, int time) {
+		WebElement element= null; 
+		WebDriverWait wait= new WebDriverWait(driver, time);
+		
+		return element; 
+		
+	}
+	
+	public static boolean verifyElement(WebDriver driver, By locator) {
+		
+		boolean exist=false; 
+		if(driver.findElements(locator).size() >0) {
+			exist=true; 
+		}
+		
+		return exist;
+	}
+}

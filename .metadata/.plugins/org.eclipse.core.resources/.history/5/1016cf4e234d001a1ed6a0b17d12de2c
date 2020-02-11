@@ -1,0 +1,13 @@
+package Framework1.Fwk1.Utils;
+
+import org.openqa.selenium.By;
+
+public class Tools {
+
+	public static boolean verifyElement(By locator) {
+		
+		boolean exist=false; 
+		
+		return exist;
+	}
+}

@@ -1,0 +1,14 @@
+package Framework1.Fwk1.Utils;
+
+import org.openqa.selenium.By;
+
+public class Tools {
+
+	public static boolean verifyElement(WebDriver driver, By locator) {
+		
+		boolean exist=false; 
+		if(driver.f)
+		
+		return exist;
+	}
+}

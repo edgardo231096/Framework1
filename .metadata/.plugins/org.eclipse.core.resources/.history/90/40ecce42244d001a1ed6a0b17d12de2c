@@ -1,0 +1,48 @@
+package Framework1.Fwk1.testScripts;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.*;
+
+import Framework1.Fwk1.Utils.DriverFactory;
+import Framework1.Fwk1.Utils.Tools;
+import Framework1.Fwk1.pageObjects.*;
+
+public class loginTestScript {
+
+	public WebDriver driver; 
+	public AddNotePage addNotePage; 
+	public HomePage homePage; 
+	public LoginPage loginPage; 
+	public MyNotesPage myNotesPage; 
+	
+	@BeforeClass 
+	public void setUp(){
+		driver=DriverFactory.startBrowser("Chrome", driver);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+	}
+	
+	@Test
+	public void test() {
+		driver.get("http://testapp.galenframework.com/#");
+		homePage= new HomePage(driver);
+		homePage.clickOnLoginButton();
+		loginPage=new LoginPage(driver);
+		loginPage.enterUsername("testuser@example.com");
+		loginPage.enterPassword("test123");
+		loginPage.clickOnLoginButton();
+		Tools.waitforElementPresence(driver, By.xpath("//button[text()='Add note']"), 10);
+		Tools.verifyElement(driver, By.id("my-notes-page"));
+		myNotesPage = new MyNotesPage(driver);
+		myNotesPage.clickOnAddNoteButton();
+		Tools.waitforElementPresence(driver, By.xpath("//button[text()='Add note']"), 10);
+	}
+	
+	@AfterClass
+	public void tearDown() {
+		driver.quit();
+	}
+}

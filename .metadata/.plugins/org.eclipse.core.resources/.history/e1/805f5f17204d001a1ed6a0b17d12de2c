@@ -1,0 +1,25 @@
+package Framework1.Fwk1.pageObjects;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class LoginPage {
+
+	public WebDriver driver;  
+	
+	public LoginPage(WebDriver driver) {
+		this.driver=driver; 
+		PageFactory.initElements(driver, this);
+	}
+	
+	@FindBy(how= , using="")
+	public WebElement txtUsername; 
+	
+	@FindBy(how= , using="")
+	public WebElement txtPassword; 
+	
+	@FindBy(how= , using="")
+	public WebElement btnLogin; 
+}

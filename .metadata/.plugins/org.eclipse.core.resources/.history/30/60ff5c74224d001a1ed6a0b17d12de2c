@@ -1,0 +1,30 @@
+package Framework1.Fwk1.testScripts;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.*;
+
+import Framework1.Fwk1.Utils.DriverFactory;
+
+public class loginTestScript {
+
+	public WebDriver driver; 
+	
+	@BeforeClass 
+	public void setUp(){
+		driver=DriverFactory.startBrowser("Chrome", driver);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+	}
+	
+	@Test
+	public void test() {
+		
+	}
+	
+	@AfterClass
+	public void tearDown() {
+		driver.quit();
+	}
+}
