@@ -583,3 +583,9 @@
 2020-02-11 17:32:19,358 [Worker-29: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edgar\eclipse-workspace\Framework1\Fwk1\src\test\resources
 2020-02-11 17:33:08,148 [Worker-29: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2020-02-11 17:33:08,148 [Worker-29: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edgar\eclipse-workspace\Framework1\Fwk1\src\main\resources
+2020-02-11 17:33:08,149 [Worker-29: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-11 17:33:08,149 [Worker-29: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edgar\eclipse-workspace\Framework1\Fwk1\src\test\resources
+2020-02-11 17:42:55,043 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-11 17:42:55,043 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edgar\eclipse-workspace\Framework1\Fwk1\src\main\resources
+2020-02-11 17:42:55,045 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-11 17:42:55,045 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edgar\eclipse-workspace\Framework1\Fwk1\src\test\resources
